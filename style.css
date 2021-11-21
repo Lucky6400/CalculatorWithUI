@@ -1,0 +1,8 @@
+.div-style{
+    width: 100%; padding: 20px; margin: auto; box-sizing: border-box;
+}
+
+
+.txt-box{
+    width: 100%; box-sizing: border-box; text-align: right; border-radius: 6px;
+}
