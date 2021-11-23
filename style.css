@@ -1,8 +1,18 @@
+
+
 .div-style{
-    width: 100%; padding: 20px; margin: auto; box-sizing: border-box;
+     padding: 0.8rem; margin: auto; box-sizing: border-box;
 }
 
 
 .txt-box{
-    width: 100%; box-sizing: border-box; text-align: right; border-radius: 6px;
+    width: 100%; box-sizing: border-box; text-align: right; border-radius: 0.5rem;
+}
+
+.div-buttons{
+    flex-wrap: wrap;
+}
+.calc-button{
+    width: 4rem;
+    margin:0rem 0.5rem;
 }

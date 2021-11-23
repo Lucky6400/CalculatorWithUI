@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
 <title>Calculator with UI</title>
 </head>
 <body>
@@ -16,75 +17,75 @@
             <div class=" div-style">
                 <input id="display-box" type="text" class="txt-box" readonly>
             </div>
-            <div class="row text-center mr-3 ml-3">
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('9')" style="width: 100%;" class="btn btn-info">9</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('8')" style="width: 100%;" class="btn btn-info">8</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('7')" style="width: 100%;" class="btn btn-info">7</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('+')" style="width: 100%;" class="btn btn-warning">+</button>
-                </div>
+            <div class="div-buttons text-center ">
+                
+                    <button id="num" onclick="getData('9')"  class="btn calc-button btn-info">9</button>
+             
+                
+                    <button id="num" onclick="getData('8')"  class="btn calc-button btn-info">8</button>
+                
+                
+                    <button id="num" onclick="getData('7')"  class="btn calc-button btn-info">7</button>
+        
+                
+                    <button disabled="false" onclick="getData('+')"  class="btn calc-button btn-warning">+</button>
+        
             </div>
-            <div class="row text-center mr-3 ml-3 mt-2">
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('6')" style="width: 100%;" class="btn btn-info">6</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('5')" style="width: 100%;" class="btn btn-info">5</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('4')" style="width: 100%;" class="btn btn-info">4</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('-')" style="width: 100%;" class="btn btn-warning">-</button>
-                </div>
+            <div class="div-buttons text-center  mt-2">
+               
+                    <button id="num" onclick="getData('6')"  class="btn calc-button btn-info">6</button>
+       
+               
+                    <button id="num" onclick="getData('5')"  class="btn calc-button btn-info">5</button>
+       
+               
+                    <button id="num" onclick="getData('4')"  class="btn calc-button btn-info">4</button>
+       
+               
+                    <button disabled="false" onclick="getData('-')"  class="btn calc-button btn-warning">-</button>
+       
             </div>
-            <div class="row text-center mr-3 ml-3 mt-2">
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('3')" style="width: 100%;" class="btn btn-info">3</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('2')" style="width: 100%;" class="btn btn-info">2</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('1')" style="width: 100%;" class="btn btn-info">1</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('/')" style="width: 100%;" class="btn btn-warning">/</button>
-                </div>
+            <div class="div-buttons text-center  mt-2">
+               
+                    <button id="num" onclick="getData('3')" class="btn calc-button btn-info">3</button>
+       
+               
+                    <button id="num" onclick="getData('2')" class="btn calc-button btn-info">2</button>
+       
+               
+                    <button id="num" onclick="getData('1')" class="btn calc-button btn-info">1</button>
+       
+               
+                    <button disabled="false" onclick="getData('/')" class="btn calc-button btn-warning">/</button>
+       
             </div>
-            <div class="row text-center mr-3 ml-3 mt-2">
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('0')" style="width: 100%;" class="btn btn-info">0</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('00')" style="width: 100%;" class="btn btn-info">00</button>
-                </div>
-                <div class="col-lg-3">
-                    <button id="num" onclick="getData('.')" style="width: 100%;" class="btn btn-info">.</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('*')" style="width: 100%;" class="btn btn-warning">x</button>
-                </div>
+            <div class="div-buttons text-center  mt-2">
+               
+                    <button id="num" onclick="getData('0')"  class="btn calc-button btn-info">0</button>
+       
+               
+                    <button id="num" onclick="getData('00')" class="btn calc-button btn-info">00</button>
+       
+               
+                    <button id="num" onclick="getData('.')"  class="btn calc-button btn-info">.</button>
+       
+               
+                    <button disabled="false" onclick="getData('*')"  class="btn calc-button btn-warning">x</button>
+       
             </div>
-            <div class="row text-center mr-3 ml-3 mt-2">
-                <div class="col-lg-3">
-                    <button onclick="backspace()" style="width: 100%;" class="btn btn-dark">Back</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('%')" style="width: 100%;" class="btn btn-warning">%</button>
-                </div>
-                <div class="col-lg-3">
-                    <button disabled="false" onclick="getData('**')" style="width: 100%;" class="btn btn-warning">^</button>
-                </div>
-                <div class="col-lg-3">
-                    <button onclick="calc()" style="width: 100%;" class="btn btn-danger">=</button>
-                </div>
+            <div class="div-buttons text-center  mt-2">
+               
+                    <button onclick="backspace()"  class="btn calc-button btn-dark">Back</button>
+       
+               
+                    <button disabled="false" onclick="getData('%')"  class="btn calc-button btn-warning">%</button>
+       
+               
+                    <button disabled="false" onclick="getData('**')"  class="btn calc-button btn-warning">^</button>
+       
+               
+                    <button onclick="calc()" class="btn calc-button btn-danger">=</button>
+       
             </div>
         </div>
     </div>
