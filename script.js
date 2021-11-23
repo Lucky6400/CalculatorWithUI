@@ -19,3 +19,11 @@ function calc(){
         dbox.style.borderColor = "red";
     }
 }
+$(document).ready(function(){
+    $('.btn-warning').click(function(){
+        $('.btn-warning').attr('disabled',true);
+    });
+    $('.btn-info').click(function(){
+        $('.btn-warning').attr('disabled',false);
+    });
+});
